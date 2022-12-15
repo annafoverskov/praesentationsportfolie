@@ -49,7 +49,6 @@ h3{
 .headerbox{
     width: auto;
     padding: 30px;
-    margin: auto;
  }
 
 .portrætbillede{
@@ -67,11 +66,24 @@ h3{
     height: 200px;
 }
 
-#footertekst{
+.footertekst{
     font-family: source sans pro, regular, black;
     color: white;
-    margin-left: 65px;
-    margin-top: 50px;
+    padding: 30px;
+    margin-left: 80px;
+}
+
+footer a :hover{
+    color: #606C38;
+}
+
+.socialemedier {
+    display: flex;
+    justify-content: row;
+    margin: 40px;
+    margin-left: 95px;
+    font-size: 35px;
+
 }
 
 .sprite{
@@ -109,6 +121,29 @@ h3{
     font-size: 15px;
 }
 
+.fa-brands {
+    color: white;
+    margin: 10px;
+}
+
+.ctaknapforside{
+    background-color: #606C38;
+    font-family: source sans pro black, black;
+    border: none;
+    color: white;
+    padding: 1px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 12px;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
 
   /*til computer*/
 
@@ -116,6 +151,7 @@ h3{
     
       nav li {
         display: inline-block;
+        margin-left: 100px;
       }
 
     nav a:hover {
@@ -124,23 +160,40 @@ h3{
 
     h1 {
         text-align: left;
+        margin-left: 80px;
+    }
+
+    h3{
+        font-size: 60px;
+        font-style: italic;
+        margin-bottom: 20px;
     }
        
     .tekstboxforside{
-        max-width: 340px;
+        max-width: 700px;
         height: 528px;
+        margin-left: 80px;
+        margin-top: 90px;
+        font-size: 23px;
     }
 
     .portrætbillede{
-        max-width: 340px;
+        display: flex;
+        justify-content: right;
+        max-width: 600px;
+        margin-bottom: -20px;
+        margin-right: 100px;
     }
 
     .portrætogtekst{
         display: flex;
         flex-direction: row-reverse;
     }
-    #footertekst{
-        margin-left: 110px;
+    .footertekst{
+        margin-left: 80px;
+        margin-top: 30px;
+        font-size: 15px;
+
     }
 
     .sprite{
@@ -159,6 +212,15 @@ h3{
 
      .kompetencer{
         grid-template-columns: auto auto;
+     }
+
+     .headerbox{
+        padding: 10px;
+        margin-bottom: 0px;
+        margin-top: 30px;
+        border: #EAEAEA solid 0.5px;
+        margin-left: -30px;
+        margin-right: -30px;
      }
 
     }
