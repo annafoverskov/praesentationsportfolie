@@ -150,8 +150,7 @@ h4{
     border-radius: 12px;
     font-style: italic;
 }
-
- main a:hover{
+.portrætogtekst a:hover{
     background-color:#738144;
 }
 
@@ -165,6 +164,17 @@ a {
     grid-template-columns: 280px;
     justify-content: center;
     padding: 40px;
+    align-items: center;
+}
+
+.portfolieelementer > div {
+
+    text-align: center;
+}
+
+
+.portfolieelementer a:hover{
+    opacity: 80%;
 }
 
 .portfolie{
@@ -172,22 +182,65 @@ a {
     color: #D6D6D6;
 }
 
-.ommigbillede img{
+#ommigbillede img{
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
 }
 
-.tekstommig{
+.beskrivelsebillede > div{
+    display: grid;
+    text-align: center;
+    padding: 30px;
+}
+
+.beskrivelsetekst{
     font-family: source sans pro, regular, black;
     text-align: left;
     padding: 30px;
 }
 
-#ommigheader{
+.beskrivelseheader{
     text-align: center;
     font-size: 30px;
 }
+
+.beskrivelseogbillede{
+    background-color: #EAEAEA;
+}
+
+#kontaktheader{
+    text-align: left;
+    font-size: 20px;
+}
+
+.kontaktoplysninger{
+    display: grid;
+    justify-content: center;
+    background-color: #EAEAEA;
+    font-family: source sans pro, regular, black;
+    text-align: left;
+    padding: 30px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.kontakt{
+    font-size: 15px;
+}
+
+.sprite{
+    display: flex;
+    justify-content:center;
+    width: 500px;
+    height: 500px;
+    background: url('rudolf1.png');
+    animation: play 2s steps(10) infinite;
+  }
+  
+  @keyframes play{
+     0%{background-position:0px;}
+     100%{background-position: -500px;}
+  }
+  
 
 
     /*tilpasset tablet version*/
@@ -254,23 +307,46 @@ a {
 
      .portfolieelementer{
         grid-template-columns: repeat(2, 1fr);
+        max-width: 280px;
+        gap: 50px;
+        margin-left: 230px ;
+
     }
 
-    .tekstommig{
+    .beskrivelsetekst{
         width: 500px;
         margin: 50px;
         padding: 0px;
-        margin-left: 60px;
+        margin-left: 70px;
+        margin-top: 120px;
     }
 
-    .ommigbilledeogtekst{
-         display: flex;
+    .beskrivelseogbillede{
+        display: flex;
         flex-direction: row-reverse;
     }
 
-    .ommigbillede{
+    #ommigbillede{
         margin: 30px;
     }
+
+    .beskrivelsebillede{
+        margin: 60px;
+
+    }
+
+    .kontaktoplysninger{
+        justify-content: left;
+    }
+    
+    .kontakt{
+        margin-left: 50px;
+    }
+
+    #kontaktheader{
+        margin-left: 50px;
+    }
+
     }
 
       /* tilpasset computer version*/
@@ -316,10 +392,11 @@ a {
 
     .portfolieelementer{
         grid-template-columns: repeat(3, 1fr);
-        padding-left: 100px;
+        gap: 100px;
+        margin-left: 530px;
     }
 
-    .tekstommig{
+    .beskrivelsetekst{
         width: 600px;
         padding: 30px;
         font-size: larger;
@@ -327,19 +404,26 @@ a {
         margin-left: 70px;
     }
 
-    .ommigbilledeogtekst{
-         display: flex;
+    .beskrivelseogbillede{
+        display: flex;
         flex-direction: row-reverse;
-        background-color: #EAEAEA;
     }
 
-    .ommigbillede{
+    #ommigbillede {
         margin: 100px;
         margin-right: 140px;
     }
     
-    #ommigheader{
+    .beskrivelseheader{
         text-align: left;
+    }
+
+    .kontakt{
+        margin-left: 90px;
+    }
+
+    #kontaktheader{
+        margin-left: 90px;
     }
 
     }
