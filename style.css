@@ -169,8 +169,26 @@ a {
 
 .portfolie{
     box-shadow: 5px 5px 5px;
-    color: #EAEAEA;
+    color: #D6D6D6;
 }
+
+.ommigbillede img{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.tekstommig{
+    font-family: source sans pro, regular, black;
+    text-align: left;
+    padding: 30px;
+}
+
+#ommigheader{
+    text-align: center;
+    font-size: 30px;
+}
+
 
     /*tilpasset tablet version*/
 
@@ -237,6 +255,22 @@ a {
      .portfolieelementer{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .tekstommig{
+        width: 500px;
+        margin: 50px;
+        padding: 0px;
+        margin-left: 60px;
+    }
+
+    .ommigbilledeogtekst{
+         display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .ommigbillede{
+        margin: 30px;
+    }
     }
 
       /* tilpasset computer version*/
@@ -285,4 +319,30 @@ a {
         padding-left: 100px;
     }
 
+    .tekstommig{
+        width: 600px;
+        padding: 30px;
+        font-size: larger;
+        margin-top: 100px;
+        margin-left: 70px;
     }
+
+    .ommigbilledeogtekst{
+         display: flex;
+        flex-direction: row-reverse;
+        background-color: #EAEAEA;
+    }
+
+    .ommigbillede{
+        margin: 100px;
+        margin-right: 140px;
+    }
+    
+    #ommigheader{
+        text-align: left;
+    }
+
+    }
+
+
+
