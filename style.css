@@ -1,17 +1,34 @@
 
 /*NAVIGATIONSBAR*/
+
+@font-face {
+    font-family: SourceSansPro-Black;
+    src: url(fonts/SourceSansPro-Black.ttf);
+}
+
+@font-face {
+    font-family: SourceSansPro-BlackItalic;
+    src: url(fonts/SourceSansPro-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: SourceSansPro-Regular;
+    src: url(fonts/SourceSansPro-Regular.ttf);
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
+
 nav a {
     color: black;
     text-decoration: none;
     text-align: center;
     padding: 10px 20px;
     display: block;
-    font-family: Source Sans Pro black, black, sans-serif;
+    font-family: SourceSansPro-Black;
 }
 nav a:hover {
     background-color: #EAEAEA;
@@ -23,11 +40,10 @@ h1 {
     text-align: center;
     padding: 10px 20px;
     display: block;
-    font-family: Source Sans Pro black, black, sans-serif;
+    font-family: SourceSansPro-Black;
     margin-top: 20px;
     margin-bottom: -30px;
-    margin-left: 30px;
-    font-size: 40px;
+    font-size: 20px;
 }
 .logo {
     text-decoration: none;
@@ -39,11 +55,11 @@ h1 {
     display: grid;
     grid-template-columns: 280px;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     padding: 40px;
     margin-bottom: 40px;
     margin-top: -30px;
-    font-family: source sans pro, regular, black;
+    font-family: SourceSansPro-Regular;
 }
 
 .portrætogtekst{
@@ -54,8 +70,8 @@ h1 {
 }
 
 h3{
-    font-family: source sans pro black, black, sans-serif;
-    font-size: 40px;
+    font-family: SourceSansPro-Black;
+    font-size: 30px;
     text-align: left;
     font-style: italic;
 }
@@ -68,19 +84,20 @@ h3{
 .portrætbillede{
     max-width: 340px;
     padding-top: 40px;
+    padding-bottom: 18px;
 }
 
 .footer{
     background-color: #283618;
-    margin: -10px;
+    margin: -30px;
     height: 200px;
 }
 
 .footertekst{
-    font-family: source sans pro, regular, black;
+    font-family: SourceSansPro-BlackItalic;
     color: white;
     padding: 30px;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 footer a :hover{
@@ -89,9 +106,8 @@ footer a :hover{
 
 .socialemedier {
     display: flex;
-    justify-content: row;
-    margin: 40px;
-    margin-left: 95px;
+
+    margin-left: 69px;
     font-size: 35px;
 }
 
@@ -100,11 +116,12 @@ footer a :hover{
     margin: 10px;
 }
 
+
 .sprite{
     display: grid;
+    max-width: 350px;
+    max-height: 350px;
     justify-content: center;
-    width: 200px;
-    height: 200px;
     background: url('adobemobilversion.png');
     animation: play 6s steps(7) infinite;
 }
@@ -123,7 +140,7 @@ footer a :hover{
     display: grid;
     justify-content: center;
     grid-gap: 0px;
-    font-family: source sans pro, regular, black;
+    font-family: SourceSansPro-Regular;
     background-color: #EAEAEA;
     margin: 20px;
 }
@@ -137,7 +154,7 @@ footer a :hover{
 }
 
 h4{
-    font-family: source sans pro black, black;
+    font-family: SourceSansPro-Black;
     font-style: italic;
     font-size: 20px;
     text-align: left;
@@ -146,7 +163,7 @@ h4{
 
 .ctaknapforside{
     background-color: #606C38;
-    font-family: source sans pro black, black;
+    font-family: SourceSansPro-Black;
     border: none;
     color: white;
     padding: 0.5px ;
@@ -195,7 +212,7 @@ a{
     border-radius: 50%;
 }
 .ommigtekst{
-    font-family: source sans pro, regular, black;
+    font-family: SourceSansPro-Regular;
     text-align: left;
     padding: 20px;
     line-height: 1.6;
@@ -214,7 +231,7 @@ a{
 }
 .kontaktknap {
     background-color: #606C38;
-    font-family: source sans pro black;
+    font-family: SourceSansPro-Black;
     border: none;
     color: white;
     padding: 4px 40px;
@@ -239,7 +256,7 @@ a{
 .kontaktoplysninger{
     height: 500px;
     background-color: #EAEAEA;
-    font-family: source sans pro, regular, black;
+    font-family: SourceSansPro-Regular;
     text-align: left;
     padding: 30px;
     margin-left: -20px;
@@ -253,19 +270,17 @@ a{
 .sprite {
     width: 500px;
     height: 500px;
-    background: url('rudolf1.png')0 0 no-repeat;
+    background: url('billeder/rudolf1.png')0 0 no-repeat;
     animation: play 2s steps(10) infinite;
   }
-  
   @keyframes play{
     0%{background-position:0px;}
     100%{background-position: -5000px;}
   }
-  
 
  /*PORTFOLIESIDER*/
 .beskrivelsetekst{
-    font-family: source sans pro, regular, black;
+    font-family: SourceSansPro-Regular;
     text-align: left;
     line-height: 1.6;
     padding: 30px;
@@ -308,13 +323,20 @@ a{
     margin-right: -10px;
   }
 
-  p#portfolie{
-    font-family: source sans pro, regular, black;
+  p#portfolie1{
+    font-family: SourceSansPro-Regular;
     font-size: 17px;
     text-align: left;
     line-height: 1.5;
 }
 
+    .video1{
+        max-width: 350px;
+    }
+
+    .video2{
+        max-width: 350px;
+    }
 
     /*TABLET VERSION*/
 
@@ -328,6 +350,7 @@ a{
     h1 {
         text-align: left;
         margin-left: 40px;
+        font-size: 40px;
     }
 
     h3{
@@ -358,7 +381,7 @@ a{
 
     .portrætogtekst{
         display: grid;
-        grid-gap: 200px;
+        grid-gap: 50px;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -451,6 +474,10 @@ a{
         width: 500px;
     }
 
+    p#portfolie1{
+        margin-left: 30px;
+    }
+
     }
 
       /* tilpasset computer version*/
@@ -467,24 +494,33 @@ a{
         font-size: 60px;
     }
 
+    .portrætogtekst{
+        grid-template-columns: 600px;
+    }
+
     .tekstboxforside{
-        width: auto;
+        grid-template-columns: 500px;
         margin-top: 90px;
         font-size: 23px;
-        margin-left: -90px;
+        margin: 20px;
+        padding-left: 0px;
+
     }
 
     .portrætbillede{
-        max-width: 600px;
+        max-width: 500px;
         margin-bottom: -18px;
         margin-right: 100px;
         margin-top: -40px;
     }
 
     .footertekst{
-        margin-left: 80px;
+        margin-left: 90px;
     }
 
+    .socialemedier{
+        margin-left: 105px;
+    }
     .ctaknapforside{
         padding: 0.5px;
         font-size: 15px;
@@ -549,6 +585,10 @@ a{
     
     p#portfolie{
         margin: 60px;
+    }
+
+    p#portfolie1{
+        margin-left: 60px
     }
 
 }
